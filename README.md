@@ -1,21 +1,21 @@
 ### A Tour of Go の写経
 
-#### プログラムの実行方法
+#### A Tour of Go のインストール
 
-```
-go run example.go
-```
-
-#### A Tour of Go の起動
-
-* Go言語をインストール
-
-* 下記のコマンドを実行
+* Go言語をインストールし、下記を実行。
 
 ```
 go install golang.org/x/website/tour@latest
 ```
 
+#### A Tour of Go の起動
+
 ```
 tour.exe
+```
+
+#### プログラムの実行方法
+
+```
+go run example.go
 ```
