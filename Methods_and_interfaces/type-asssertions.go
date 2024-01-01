@@ -21,17 +21,19 @@ func main() {
 	// 文字列の型が入ったインターフェース i
 	var i interface{} = "hello"
 
-	//文字列はあるので基となる値が変数sに入る。
+	//インターフェースiに文字列型があるので基となる値が変数sに入る。
 	s := i.(string)
 	fmt.Println(s)
 
+	//インターフェースiに文字列はあるので、文字列型のゼロ値が変数sに入り、変数okにはbool値としてtrueが入る。
 	s, ok := i.(string)
 	fmt.Println(s, ok)
 
+	// インターフェースiに倍精度型はないので、倍精度型のゼロ値（0）が変数fに入り、変数okにはbool値としてfalseが入る。
 	f, ok := i.(float64)
 	fmt.Println(f, ok)
 
-	//panicになる。
-	f = i.(float64)
-	fmt.Println(f)
+	//インターフェースiに倍精度型はないので、panic（エラー）になる。
+	// f = i.(float64)
+	// fmt.Println(f)
 }
