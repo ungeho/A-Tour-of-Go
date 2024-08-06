@@ -1,4 +1,14 @@
-### A Tour of Go の写経
+# A Tour of Go の写経
+
+
+## Go言語のインストール
+
+下記のリンクから、**Featured downloads**の項目から、OSに合うインストールソフトをダウンロードする。
+
+[https://go.dev/dl/](https://go.dev/dl/ "Go言語インストール")
+
+
+### 環境構築(Windows)
 
 #### A Tour of Go のインストール
 
@@ -19,3 +29,5 @@ tour.exe
 ```
 go run example.go
 ```
+
+### 環境構築(Linux)
